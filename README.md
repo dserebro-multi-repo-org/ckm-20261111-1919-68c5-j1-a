@@ -41,3 +41,5 @@ curl -X POST http://localhost:8000/games
 # Make a move in that game (replace {id} with the returned game id)
 curl -X POST http://localhost:8000/games/{id}/moves
 ```
+
+The server must be running before you issue the requests above.
