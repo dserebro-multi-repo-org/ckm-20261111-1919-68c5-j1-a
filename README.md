@@ -29,3 +29,15 @@ symfony server:start
 # Or using PHP's built-in server
 php -S localhost:8000 -t public/
 ```
+
+## Testing
+
+No automated test suite is bundled yet. To verify the API, start the server as described in [Run](#run) and exercise the endpoints manually:
+
+```bash
+# Create a game
+curl -X POST http://localhost:8000/games
+
+# Make a move in that game (replace {id} with the returned game id)
+curl -X POST http://localhost:8000/games/{id}/moves
+```
